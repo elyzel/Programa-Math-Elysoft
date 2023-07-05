@@ -34,6 +34,7 @@ class Operamath {
                 System.out.println("3 - + de 4 números");
                 soma = keyboard.nextInt();
                 switch (soma) {
+                    
                     case 1:
                         // Soma
                         double a, b, c, res;

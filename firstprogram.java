@@ -43,6 +43,7 @@ class Operamath {
                         b = keyboard.nextDouble();
                         res = a + b;
                         System.out.println("O resultado da soma é igual a " + res);
+                        break;
 
                     case 2:
                         System.out.println("Digite o primeiro número: ");
@@ -53,6 +54,7 @@ class Operamath {
                         c = keyboard.nextDouble();
                         res = a + b + c;
                         System.out.println("O resultado da soma é igual a" + res);
+                        break;
 
                     case 3:
                         System.out.println("Digite o primeiro número: ");
@@ -63,6 +65,7 @@ class Operamath {
                         c = keyboard.nextDouble();
                         res = a + b + c;
                         System.out.println("O resultado da soma é igual a" + res);
+                        break;
 
                 }
 
@@ -96,8 +99,9 @@ class Operamath {
                 }
                 break;
 
-            // Bhaskara
+            
             case 3:
+            // Bhaskara
                 double delt, res1, res2;
                 System.out.println("Digite o coeficiente a: ");// Pedindo coeficiente a
                 a = keyboard.nextDouble();
@@ -117,12 +121,16 @@ class Operamath {
                 break;
 
             case 4:
+                //Regra de três 
+                double numero1, numero2, grz22, grz11, resgrzs ;
+                String escolhart,  grzescolha, grzou ;
+                BufferedReader lerrg, grzpdt, propor;
                 
-                double rtsimples,spl1, spl2,spl3, spl4, rtcompósta, descrg, d;
-                String escolhart;
-                BufferedReader lerrg;
 
                 lerrg = new BufferedReader(new InputStreamReader(System.in));
+                grzpdt =  new BufferedReader(new InputStreamReader(System.in));
+                propor =  new BufferedReader(new InputStreamReader(System.in));
+
 
                 System.out.println("Deseja fazer a regra de três simples? ");
                 System.out.println("Digite somente [s/n]");
@@ -130,22 +138,39 @@ class Operamath {
                 try {
 
                     escolhart = lerrg.readLine();
-                    
-                
-                
+                     
                 If(escolhart.equalsIgnoreCase("sim"));
                 {
                     System.out.println("Vamos fazer regra de três simples então.");
-                    System.out.println("Digite o nome da primeira grandeza: ");
-                    spl1 = keyboard.nextDouble();
-                    System.out.println("Digite o valor da primeira grandeza: ");
-                    spl1 = keyboard.nextDouble();
-                    System.out.println("Digite a segunda grandeza do primeira linha: ");
-                    spl2 = keyboard.nextDouble();
-                    System.out.println("Digite a primeira grandeza da segunda linha: ");
-                    spl3 = keyboard.nextDouble();
-                    System.out.println("Digite a segunda grandeza da segunda linha: ");
-                    spl4 = keyboard.nextDouble();
+                    System.out.println("Digite o valor da primeira grandeza(Na primeira linha): ");
+                    numero1 = keyboard.nextDouble();
+                    System.out.println("Digite o valor da segunda grandeza(Na primeira linha): ");
+                    numero2 = keyboard.nextDouble();
+
+                    
+                    System.out.println("Será os valores são diretamente proporcionais? ");
+                    System.out.println("Digite somente s/n");
+                    grzescolha = grzpdt.readLine();
+                    
+                    If(grzescolha.equalsIgnoreCase("sim"));{
+
+                        
+                        System.out.println("É a primeira grandeza na segunda linha que está pendente?");
+                        System.out.println("Digite somente s/n");
+                        grzou = propor.readLine();
+                    }
+                        else{
+                            System.out.println("Digite o valor da primeira grandeza na segunda linha: ");
+                            grz11 = keyboard.nextDouble();
+                            resgrzs = (numero1 * grz22)/numero2;
+                            System.out.println("O valor da regra de três desses números é igual a " + resgrzs);
+                        }
+                        If(grzescolha.equalsIgnoreCase("sim"));
+                            System.out.println("Digite o valor da segunda grandeza na segunda linha: ");
+                            grz22 = keyboard.nextDouble();
+                            resgrzs = (numero1 * grz22)/numero2;
+                            System.out.println("O valor da regra de três desses números é igual a " + resgrzs);
+                
                 } }
               catch (IOException e1) {
                     // TODO Auto-generated catch block

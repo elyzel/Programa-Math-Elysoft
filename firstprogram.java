@@ -65,7 +65,7 @@ class Operamath {
                         System.out.println("Digite o terceiro número: ");
                         c = keyboard.nextDouble();
                         res = a + b + c;
-                        System.out.println("O resultado da soma é igual a" + res);
+                        System.out.println("O resultado da soma é igual a " + res);
                         break;
 
                 }

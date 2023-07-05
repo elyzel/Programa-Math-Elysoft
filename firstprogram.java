@@ -34,7 +34,7 @@ class Operamath {
                 System.out.println("3 - + de 4 números");
                 soma = keyboard.nextInt();
                 switch (soma) {
-                    
+
                     case 1:
                         // Soma
                         double a, b, c, res;
@@ -160,12 +160,6 @@ class Operamath {
                         System.out.println("Digite somente s/n");
                         grzou = propor.readLine();
                     }
-                        else{
-                            System.out.println("Digite o valor da primeira grandeza na segunda linha: ");
-                            grz11 = keyboard.nextDouble();
-                            resgrzs = (numero1 * grz22)/numero2;
-                            System.out.println("O valor da regra de três desses números é igual a " + resgrzs);
-                        }
                         If(grzescolha.equalsIgnoreCase("sim"));
                             System.out.println("Digite o valor da segunda grandeza na segunda linha: ");
                             grz22 = keyboard.nextDouble();

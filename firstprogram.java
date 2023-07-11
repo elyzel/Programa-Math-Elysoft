@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.Math;
 
- public class firstprogram {
+public class firstprogram {
 
     /**
      * 
@@ -176,7 +176,9 @@ import java.lang.Math;
                     System.out.println("Será os valores são diretamente proporcionais? ");
                     System.out.println("Digite somente s/n");
                     grzescolha = grzpdt.readLine();
-                 } else if {
+                 } 
+                 
+                 else if {
 
                     System.out.println("Faremos então regra de três composta. ");
                 }
@@ -203,8 +205,4 @@ import java.lang.Math;
     }
     }
 }
-    }
-
-
-              
-            
+}

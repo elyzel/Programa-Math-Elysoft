@@ -230,12 +230,8 @@ public class firstprogram {
          }
     }
 }
-<<<<<<< HEAD
     
 
 
               
             
-=======
-}
->>>>>>> 7ae3be93bc04855e391e6a87114e08e439592b06

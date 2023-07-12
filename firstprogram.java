@@ -180,7 +180,7 @@ public class firstprogram {
                     grzescolha = grzpdt.readLine();
                     break;
 
-                 } else if(escolhaart.equals("n")) {
+                 } else if(escolhart.equals("n")) {
 
                     System.out.println("Faremos então regra de três composta. ");
                     break;

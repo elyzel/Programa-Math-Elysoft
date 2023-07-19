@@ -150,23 +150,25 @@ public class firstprogram {
                 double numero1, numero2, grz22, grz11, resgrzs ;
                 String escolhart,  grzescolha, grzou ;
                 BufferedReader lerrg, grzpdt, propor;
-                
-            
-                
-            
+    
                 lerrg = new BufferedReader(new InputStreamReader(System.in));
                 grzpdt =  new BufferedReader(new InputStreamReader(System.in));
                 propor =  new BufferedReader(new InputStreamReader(System.in));
-
+                
+                try {
 
                 System.out.println("Deseja fazer a regra de três simples? ");
                 System.out.println("Digite somente [s/n]");
-        try {
+        
+                while(true){
                     escolhart = lerrg.readLine();
                      
-                if(escolhart.equals("s"));
-                {
+                if(escolhart.equals("s"));{
+
                     System.out.println("Vamos fazer regra de três simples então.");
+                    System.out.println("Abstração da regra de três simples.");
+                    System.out.println("11     |      12\n");
+                    System.out.println("21     |      22\n");
                     System.out.println("Digite o valor da primeira grandeza(Na primeira linha): ");
                     numero1 = keyboard.nextDouble();
                     System.out.println("Digite o valor da segunda grandeza(Na primeira linha): ");
@@ -176,33 +178,60 @@ public class firstprogram {
                     System.out.println("Será os valores são diretamente proporcionais? ");
                     System.out.println("Digite somente s/n");
                     grzescolha = grzpdt.readLine();
-                 } 
-                 
-                 else if {
+                    break;
+
+                 } else if(escolhart.equals("n")) {
 
                     System.out.println("Faremos então regra de três composta. ");
+                    break;
+
+                } else {
+                    System.out.println("Por favor digite somente [s/n]");
                 }
-                
+
+            }
+            }catch (Exception e) {
+
+                System.out.println("por favor reinicie o programa.");
+
+            }
+                 try {
                     
+                    while(true){
+
                     if (grzescolha.equals("s"));{
 
-                        
                         System.out.println("É a primeira grandeza na segunda linha que está pendente?");
                         System.out.println("Digite somente s/n");
                         grzou = propor.readLine();
-                    } else if(grzescolha.equals("n")) {
+
+                     } else if (grzescolha.equals("n")){
 
                         System.out.println("É a segunda grandeza na segunda linha que está pendente?");
                     }
-                        if (grzescolha.equals("s")){
+                }
+            } catch (Exception e) {
+                    // TODO: handle exception
+                 } 
+                
+                try {
+                    
+                      if (grzescolha.equals("s"));{
                             System.out.println("Digite o valor da segunda grandeza na segunda linha: ");
                             grz22 = keyboard.nextDouble();
                             resgrzs = (numero1 * grz22)/numero2;
                             System.out.println("O valor da regra de três desses números é igual a " + resgrzs);
                 
                 }
-             }finally{
-    }
+                } catch (Exception e) {
+                    // TODO: handle exception
+            }
+             
+         }
     }
 }
-}
+    
+
+
+              
+            
